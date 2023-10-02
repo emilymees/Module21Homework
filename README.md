@@ -14,6 +14,7 @@ Then bins were created for `APPLICATION_TYPE` and `CLASSIFICATION` to potentiall
 ![Alt text](<https://github.com/emilymees/Module21Homework/blob/main/Images/Screenshot%202023-10-02%20180303.png>)
 
 After converting the categorical data to numeric with `pd.get_dummies`, the data was split into features and target arrays. 
+
 Target variable for this model:
 * *IS_SUCCESSFUL*
 
@@ -32,7 +33,16 @@ Feature variables for this model:
 
 ## Compiling, Training, and Evaluating the Model
 
+The first training model was built with 2 hidden layers which included 80 and 30 neurons, and `relu` activation function.
 
+![Alt text](<https://github.com/emilymees/Module21Homework/blob/main/Images/Screenshot%202023-10-02%20182837.png>)
+
+This resulted in 0.555 loss and approximately 72.52% accuracy with the test data. 
+
+Since our target accuracy was 75% I then went through 4 optimization trials where I either increased the number of hidden layers, increased the number of neurons for each hidden layer, adjusted the activation function, and then tried dropping the `INCOME_AMT` column from the dataset. 
+
+Unfortunately each of these optimization attempts did not produce the target accuracy and stayed close to 72% accuracy.
 
 ## Summary
 
+While there was a slight increase in performance switching to `relu` activation function and dropping the `INCOME_AMT` column, I was still only able to achieve 72.8% accuracy. Further investigation into additional binning or layers/neurons would need to take place to potentially achieve target accuracy. 
