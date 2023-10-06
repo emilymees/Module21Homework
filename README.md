@@ -45,4 +45,4 @@ Unfortunately each of these optimization attempts did not produce the target acc
 
 ## Summary
 
-While there was a slight increase in performance switching to `relu` activation function and dropping the `INCOME_AMT` column, I was still only able to achieve 72.8% accuracy. Further investigation into additional binning or layers/neurons would need to take place to potentially achieve target accuracy. 
+While there was a slight increase in performance switching back to `relu` activation function and dropping the `INCOME_AMT` column, I was still only able to achieve 72.8% accuracy. Further investigation into additional binning or layers/neurons would need to take place to potentially achieve target accuracy. 
